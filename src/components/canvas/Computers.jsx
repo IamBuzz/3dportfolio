@@ -14,7 +14,7 @@ const Computers = ({isMobile}) => {
         // groundColor="black"
       />
       <pointLight 
-        intensity={1.5} //TODO: work on this also
+        intensity={1} //TODO: work on this also
       />
       <spotLight 
         position={[-20, 50, 10]}
@@ -27,7 +27,7 @@ const Computers = ({isMobile}) => {
 
       <primitive 
         object={computer.scene}
-        scale={isMobile? 0.6: 0.75}
+        scale={isMobile? 0.3: 0.75}
         position = {isMobile? [0, -3, -2.2]: [0, -3.25, -1.5]}
         rotation = {[-0.01, -0.2, -0.1]}
       />
